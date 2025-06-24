@@ -1,0 +1,128 @@
+/* Same basic styling + minor improvements */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Optional overlay image */
+.background-image {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Responsive main container */
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffd700;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Scrollable dropdown list style */
+select {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Style sections with separation */
+.form-section {
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #eee;
+}
+
+/* Dropdowns and inputs */
+select, input[type="submit"], button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+select:focus {
+  border: 2px solid #ffd700;
+}
+
+/* Button */
+.btn, input[type="submit"] {
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover, input[type="submit"]:hover {
+  background-color: #e07b00;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffffff44;
+  margin: 40px 0;
+}
+
+/* Power BI Dashboard */
+.powerbi-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #ffffff33;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+}
+
+.powerbi-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Make dropdown long list visible */
+select {
+  height: auto;
+  max-height: 40px;
+}
+
+/* Allow longer team list */
+option {
+  padding: 8px;
+  font-size: 15px;
+}
